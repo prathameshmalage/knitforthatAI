@@ -1,16 +1,48 @@
-# React + Vite
+# KnitForThat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A landing page for a small-batch, handcrafted sweater brand. Built with React, Vite, and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Hero banner with background image and call-to-action
+- Featured sweater product cards with add-to-cart buttons
+- About section highlighting brand values (ethical sourcing, natural fibers, no fast fashion)
+- Contact footer with email and Instagram link
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** — UI framework
+- **Vite 7** — Build tool with HMR
+- **Tailwind CSS v4** — Utility-first styling via `@tailwindcss/vite` plugin
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd KnitForThat
+npm install
+npm run dev
+```
+
+The dev server starts at `http://localhost:5173`.
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+## Project Structure
+
+```
+KnitForThat/
+  src/
+    App.jsx        # Main landing page component
+    main.jsx       # Entry point
+    index.css      # Tailwind imports
+  index.html       # HTML shell
+  vite.config.js   # Vite + Tailwind plugin config
+  package.json
+```
